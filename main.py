@@ -5,7 +5,7 @@ import os
 app = FastAPI()
 
 # URL вашего n8n вебхука (лучше взять из переменных окружения)
-N8N_WEBHOOK_URL = os.getenv("N8N_WEBHOOK_URL", "https://n8n.aiguro.ru/webhook-test/incoming-call-exolve") # Замените на ваш реальный n8n Test URL
+N8N_WEBHOOK_URL = os.getenv("N8N_WEBHOOK_URL", "YOUR_N8N_WEBHOOK_TEST_URL_HERE") # Замените на ваш реальный n8n Test URL
 
 @app.get("/")
 async def read_root():
